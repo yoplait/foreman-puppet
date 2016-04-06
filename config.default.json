@@ -1,0 +1,79 @@
+    {
+        "servers": {
+            "foreman.puppetruns": {
+                "guest_ip": "192.168.32.5",
+                "guest_hostname": "foreman.puppetruns.local",
+                "box": "centos/7",
+                "timezone": "Europe/Dublin",
+                "cpus": 1,
+                "memory": 2048,
+                "scripts": [
+                    "centos7_update.sh",
+                    "centos7_general.sh",
+                    "centos7_performance.sh",
+                    "centos7_git.sh",
+                    "centos7_ssh.sh",
+                    "centos7_supervisor.sh",
+                    "centos7_puppet.sh",
+                    "centos7_hosts.sh"
+                ]
+            },
+            "puppet.puppetruns": {
+                "guest_ip": "192.168.32.6",
+                "guest_hostname": "puppet.puppetruns.local",
+                "box": "centos/7",
+                "timezone": "Europe/Dublin",
+                "cpus": 1,
+                "memory": 2048,
+                "scripts": [
+                    "centos7_update.sh",
+                    "centos7_general.sh",
+                    "centos7_performance.sh",
+                    "centos7_git.sh",
+                    "centos7_ssh.sh",
+                    "centos7_supervisor.sh",
+                    "centos7_puppet.sh",
+                    "centos7_hosts.sh"
+                ]
+            },
+            "db.puppetruns": {
+                "guest_ip": "192.168.32.10",
+                "guest_hostname": "db.puppetruns.local",
+                "box": "centos/7",
+                "timezone": "Europe/Dublin",
+                "cpus": 1,
+                "memory": 2048,
+                "scripts": [
+                    "centos7_update.sh",
+                    "centos7_general.sh",
+                    "centos7_performance.sh",
+                    "centos7_git.sh",
+                    "centos7_ssh.sh",
+                    "centos7_puppet.sh",
+                    "centos7_supervisor.sh",
+                    "centos7_puppet.sh",
+                    "centos7_db.sh",
+                    "centos7_hosts.sh"
+                ]
+            },
+            "node01.puppetruns": {
+                "guest_ip": "192.168.32.15",
+                "guest_hostname": "node01.puppetruns.local",
+                "box": "centos/7",
+                "timezone": "Europe/Dublin",
+                "cpus": 1,
+                "memory": 2048,
+                "scripts": [
+                    "centos7_update.sh",
+                    "centos7_general.sh",
+                    "centos7_performance.sh",
+                    "centos7_git.sh",
+                    "centos7_ssh.sh",
+                    "centos7_puppet.sh",
+                    "centos7_supervisor.sh",
+                    "centos7_puppet.sh",
+                    "centos7_hosts.sh"  
+                ]
+            }
+        }
+    }

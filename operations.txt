@@ -1,0 +1,41 @@
+#
+# 
+#
+
+host file:
+
+C:\Windows\System32\drivers\etc\hosts
+
+vagrant up
+vagrant up --debug
+vagrant up --debug &> vagrant.log
+
+debug info warn error
+
+vagrant global-status
+
+vagrant ssh foreman.puppetruns
+vagrant ssh puppet.puppetruns
+vagrant ssh db.puppetruns
+
+ping foreman.puppetruns
+ping puppet.puppetruns
+ping db.puppetruns
+
+vagrant provision foreman.puppetruns
+vagrant provision --debug foreman.puppetruns
+vagrant provision puppet.puppetruns
+vagrant provision db.puppetruns
+
+vagrant reload foreman.puppetruns
+vagrant reload puppet.puppetruns
+vagrant reload db.puppetruns
+
+vagrant halt foreman.puppetruns 
+vagrant halt puppet.puppetruns 
+vagrant halt db.puppetruns 
+
+
+vagrant destroy foreman.puppetruns
+vagrant destroy puppet.puppetruns
+vagrant destroy db.puppetruns
