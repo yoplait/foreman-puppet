@@ -17,6 +17,7 @@ vagrant global-status
 vagrant ssh foreman.puppetruns
 vagrant ssh puppet.puppetruns
 vagrant ssh db.puppetruns
+vagrant ssh node01.puppetruns
 
 ping foreman.puppetruns
 ping puppet.puppetruns

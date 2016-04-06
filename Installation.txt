@@ -46,7 +46,7 @@ GRANT ALL PRIVILEGES ON foreman.* TO 'foreman'@'foreman-reports.domain' IDENTIFI
 #to test connectivity
 
 ping db.domain
-mysql --host=db.domain --user=foreman --password='foreman_password' foreman
+mysql --host=db --user=foreman --password='foreman_password' foreman
 SHOW VARIABLES LIKE "%version%";
 SHOW VARIABLES LIKE "%host%";
 

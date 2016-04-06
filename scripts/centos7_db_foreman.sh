@@ -6,7 +6,7 @@
 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo " "
-echo "Bootstraping centos7_git.sh"
+echo "Bootstraping centos7_db_foreman.sh"
 echo " "
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
@@ -24,7 +24,7 @@ sudo mysql -e "GRANT ALL PRIVILEGES ON foreman.* TO 'foreman'@'foreman-reports.d
 
 sudo cp /etc/memcached.conf /etc/memcached.conf.old && \
 sudo sed -i 's/^-m 64.*/-m 128/' /etc/memcached.conf && \
-sudo sed -i 's/^-l 127.0.0.1.*/-l 0.0.0.0/' /etc/memcached.conf
+sudo sed -i 's/^-l 127.0.0.1.*/-l 0.0.0.0/' /etc/memcached.conf && \
 sudo diff -c /etc/memcached.conf /etc/memcached.conf.old
 
 
